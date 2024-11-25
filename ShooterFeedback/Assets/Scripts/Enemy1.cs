@@ -2,20 +2,19 @@ using UnityEngine;
 
 public class Enemy1 : MonoBehaviour
 {
+    // Start is called before the first frame update
     [Header("Movement")]
     [SerializeField] float moveSpeed;
 
-
-    [Header("Gizmos")]
     [SerializeField] Vector2 wallCheckPos;
     [SerializeField] Vector2 groundCheckPos;
     [SerializeField] LayerMask checkMask;
 
+    [Header("Gizmos")]
     [SerializeField] Color checkPosColors = Color.red;
     [SerializeField] float checkPosSize = 0.1f;
 
     private bool isFacingRight = true;
-    
 
     private void FixedUpdate()
     {
@@ -25,7 +24,7 @@ public class Enemy1 : MonoBehaviour
         }
 
         float horizontalVelocity = (isFacingRight) ? moveSpeed : -moveSpeed;
-      //  rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
+       // rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
     }
 
     private bool CollisionCheck(Vector2 positionToCheck)
@@ -39,6 +38,8 @@ public class Enemy1 : MonoBehaviour
 
         return false;
     }
+
+
     private void DestroySelf()
     {
         Destroy(gameObject);
@@ -55,4 +56,3 @@ public class Enemy1 : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheckActualPos, checkPosSize);
     }
 }
-

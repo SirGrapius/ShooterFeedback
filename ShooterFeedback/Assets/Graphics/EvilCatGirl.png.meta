@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5e5eed68c5655984fbbea328cabacaf6
+guid: fa85c255fca677649b3d52476fdc8ea4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4756802139961417842
-    second: TempPlayer_0
+      213: -5980495872782443723
+    second: tumblr_49736f72de5d9bdb657b77c91589ee54_bcb71770_400_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TempPlayer_0
+      name: tumblr_49736f72de5d9bdb657b77c91589ee54_bcb71770_400_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 745
-        height: 740
+        width: 283
+        height: 282
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 270e73bf75e830240800000000000000
-      internalID: 4756802139961417842
+      spriteID: 53bdc1290b2010da0800000000000000
+      internalID: -5980495872782443723
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TempPlayer_0: 4756802139961417842
+      tumblr_49736f72de5d9bdb657b77c91589ee54_bcb71770_400_0: -5980495872782443723
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
