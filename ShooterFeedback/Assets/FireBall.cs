@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FireBall : MonoBehaviour
+public class PlayerShoot : MonoBehaviour
 {
     [Header("Ball Settings")]
     public GameObject ballPrefab; // The ball prefab to shoot
@@ -9,26 +9,28 @@ public class FireBall : MonoBehaviour
 
     void Update()
     {
-        // Check if the spacebar is pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Fire();
+            FireBall();
         }
     }
 
-    void Fire()
+    void FireBall()
     {
         if (ballPrefab != null && firePoint != null)
         {
-            // Instantiate the ball at the fire point's position and rotation
+            // Instantiate the ball clone
             GameObject ball = Instantiate(ballPrefab, firePoint.position, firePoint.rotation);
 
-            // Add velocity to the ball
+            // Add velocity to the ball clone
             Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.linearVelocity = firePoint.right * ballSpeed; // Fire the ball to the right
+                rb.linearVelocity = firePoint.right * ballSpeed;
             }
+
+            // Destroy the ball clone after 1 second
+            Destroy(ball, 1f);
         }
         else
         {
