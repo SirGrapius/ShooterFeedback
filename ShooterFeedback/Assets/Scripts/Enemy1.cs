@@ -14,6 +14,8 @@ public class Enemy1 : MonoBehaviour
     [SerializeField] Color checkPosColors = Color.red;
     [SerializeField] float checkPosSize = 0.1f;
 
+    [SerializeField] Rigidbody2D rb;
+
     private bool isFacingRight = true;
 
     private void FixedUpdate()
@@ -24,7 +26,7 @@ public class Enemy1 : MonoBehaviour
         }
 
         float horizontalVelocity = (isFacingRight) ? moveSpeed : -moveSpeed;
-       // rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
+      //  rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
     }
 
     private bool CollisionCheck(Vector2 positionToCheck)
@@ -39,7 +41,14 @@ public class Enemy1 : MonoBehaviour
         return false;
     }
 
+    /*protected override void Die()
+    {
+        base.Die();
 
+        rb.velocity = new Vector2(0, rb.velocity.y);
+    }*/
+
+    //Called from Death animation
     private void DestroySelf()
     {
         Destroy(gameObject);
