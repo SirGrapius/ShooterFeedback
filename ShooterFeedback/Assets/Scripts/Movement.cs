@@ -2,54 +2,54 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] bool isMoving = false;
-    [SerializeField] bool isJumping = false;
+    [SerializeField] bool isMoving;
+    [SerializeField] bool isGrounded;
     [SerializeField] float speed = 5;
     [SerializeField] float jumpForce = 10;
+    [SerializeField] float groundCheckerRadius;
 
-    [SerializeField] Rigidbody2D rb;
+    Vector2 playerInput;
+
+    [SerializeField] Transform groundChecker;
+    [SerializeField] LayerMask groundedLayers;
+    Rigidbody2D rb;
 
     void Start()
     {
-        rb.gravityScale = 2.1f;
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.A))
+        playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        rb.linearVelocityX = playerInput.x * speed;
+
+        if(playerInput.x != 0)
         {
-            rb.transform.position += Vector3.left * speed * Time.deltaTime;
             isMoving = true;
         }
-        if (Input.GetKeyUp(KeyCode.A))
+
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            isMoving = false;
+            rb.linearVelocity = new Vector2(0,0);
+            rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb.transform.position += Vector3.right * speed * Time.deltaTime;
-            isMoving = true;
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            isMoving = false;
-        }
-
-        if (Input.GetKey(KeyCode.Space) && isJumping == false)
-        {
-            rb.AddForce(Vector3.up * jumpForce);
-            isJumping = true;
-        }
+        isGrounded = Physics2D.OverlapCircle(groundChecker.position, groundCheckerRadius, groundedLayers);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnDrawGizmos()
     {
-        if (collision.gameObject.tag == "Ground")
-        {
-            isJumping = false;
-        }
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(groundChecker.position, groundCheckerRadius);
+    }
+
+    private void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2(playerInput.x * speed, rb.linearVelocity.y);
     }
 }
