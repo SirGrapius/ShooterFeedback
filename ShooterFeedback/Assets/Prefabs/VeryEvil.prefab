@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3819130837645479848}
   - component: {fileID: 4507761712539351638}
   - component: {fileID: 5696702003351138828}
-  m_Layer: 0
+  - component: {fileID: 2282947047560785311}
+  m_Layer: 6
   m_Name: VeryEvil
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,15 +178,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4bc2a8e1d4d6b47b10c9d215bb439e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  wallCheckPos: {x: 4, y: 1}
-  groundCheckPos: {x: 5, y: -0.1}
+  moveSpeed: 3
+  wallCheckPos: {x: 0.5, y: 0}
+  groundCheckPos: {x: 0.5, y: -0.5}
   checkMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  checkPosColors: {r: 1, g: 0, b: 0, a: 1}
-  checkPosSize: 3
+    m_Bits: 8
   rb: {fileID: 3819130837645479848}
+--- !u!114 &2282947047560785311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867767695607698831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b4255ef803b074089fa41ef383d11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointPickUp: {fileID: 0}
+  numberOfPoints: 3
+  damageSfx: {fileID: 0}
 --- !u!1 &4006878065600456284
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5629593714820286026}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,9 +224,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4006878065600456284}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7948136, y: -0.7072486, z: -0.053878922}
-  m_LocalScale: {x: 0.59007496, y: 0.9131586, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7135916177919494857}
@@ -226,7 +240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8918171283202354220}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,9 +255,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5761160847937891348}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7948136, y: -0.7072486, z: -0.053878922}
-  m_LocalScale: {x: 0.59007496, y: 0.9131586, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7135916177919494857}
