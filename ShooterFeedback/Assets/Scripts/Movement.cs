@@ -1,3 +1,4 @@
+using UnityEditorInternal;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -10,6 +11,7 @@ public class Movement : MonoBehaviour
 
     Vector2 playerInput;
 
+    [SerializeField] AudioController ac;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask groundedLayers;
     Rigidbody2D rb;
@@ -25,11 +27,22 @@ public class Movement : MonoBehaviour
 
         playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        rb.linearVelocityX = playerInput.x * speed;
+        if (isMoving)
+        {
+            ac.playSFX(ac.audios[1]);
+        }
 
         if(playerInput.x != 0)
         {
             isMoving = true;
+            if (playerInput.x < 0) 
+            { 
+                rb.transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+            if (playerInput.x > 0)
+            {
+                rb.transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
         }
 
 
@@ -50,6 +63,6 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(playerInput.x * speed, rb.linearVelocity.y);
+        rb.linearVelocityX = playerInput.x * speed;
     }
 }

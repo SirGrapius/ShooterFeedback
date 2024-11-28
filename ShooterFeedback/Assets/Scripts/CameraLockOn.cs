@@ -1,0 +1,18 @@
+using UnityEngine;
+
+public class CameraLockOn : MonoBehaviour
+{
+    [SerializeField] Transform playerTransform;
+    [SerializeField] float cameraSpeed;
+    Vector3 zOffset;
+
+    void Start()
+    {
+        zOffset = transform.position - playerTransform.position;
+    }
+
+    void Update()
+    {
+        transform.position = Vector3.Lerp(transform.position, playerTransform.position + zOffset, Time.deltaTime * cameraSpeed);
+    }
+}
