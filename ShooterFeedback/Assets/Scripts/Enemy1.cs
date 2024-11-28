@@ -1,3 +1,4 @@
+using System.Drawing;
 using UnityEngine;
 
 public class Enemy1 : MonoBehaviour
@@ -8,8 +9,9 @@ public class Enemy1 : MonoBehaviour
     [SerializeField] Transform ledgeCheckPosition;
     [SerializeField] bool isGrounded;
     [SerializeField] LayerMask groundLayer;
-    [SerializeField] float ledgeChecklenght;
+    [SerializeField] float ledgeChecklenght = 1f;
 
+    private bool isFacingRight = true;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,15 +29,21 @@ public class Enemy1 : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(ledgeCheckPosition.position, Vector2.down, ledgeChecklenght, groundLayer);
 
-        if (hit.collider != null) 
-        { 
-        
-        }
-        else
+        if (hit.collider == null) 
         {
-        
-        }
+            isFacingRight = !isFacingRight;
 
-    //    Debug.DrawRay(ledgeCheckPosition.position, Vector2.down, ledgeChecklenght, Color.red);
+            if (isFacingRight)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+            
+        }
+     
+        Debug.DrawRay(ledgeCheckPosition.position, Vector2.down * ledgeChecklenght, UnityEngine.Color.red);
     }
 }   
