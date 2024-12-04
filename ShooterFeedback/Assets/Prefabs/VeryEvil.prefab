@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4507761712539351638}
   - component: {fileID: 5696702003351138828}
   - component: {fileID: 2282947047560785311}
+  - component: {fileID: 9184056580760949866}
   m_Layer: 6
   m_Name: VeryEvil
   m_TagString: Enemy
@@ -201,7 +202,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointPickUp: {fileID: 0}
   numberOfPoints: 3
-  damageSfx: {fileID: 0}
+  damageSfx: {fileID: 8300000, guid: 105fb050f1ecbac49a8866f1c1417041, type: 3}
+--- !u!114 &9184056580760949866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867767695607698831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b90c16df7a69e42b748011187c9159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mSource: {fileID: 0}
+  sfxSource: {fileID: 0}
+  audios: []
 --- !u!1 &4006878065600456284
 GameObject:
   m_ObjectHideFlags: 0
