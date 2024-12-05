@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-
+    [SerializeField] PlayerHealth health;
     void Start()
     {
         
@@ -13,7 +13,10 @@ public class SceneLoader : MonoBehaviour
 
     void Update()
     {
-        
+        if (health.health <= 0)
+        {
+            StartCoroutine(ScreenLoadProcess(1));
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
