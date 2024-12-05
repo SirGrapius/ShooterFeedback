@@ -180,14 +180,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4bc2a8e1d4d6b47b10c9d215bb439e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemylifes: 0
-  enemyMovementSpeed: 0
-  ledgeCheckPosition: {fileID: 0}
+  enemylifes: 5
+  enemyMovementSpeed: 2.5
+  ledgeCheckPosition: {fileID: 2857489248335340134}
   isGrounded: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  ledgeChecklenght: 0
+    m_Bits: 8
+  ledgeChecklenght: 0.5
+  damageAmount: 10
 --- !u!114 &2282947047560785311
 MonoBehaviour:
   m_ObjectHideFlags: 0
