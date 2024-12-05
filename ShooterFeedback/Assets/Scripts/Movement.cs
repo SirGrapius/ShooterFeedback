@@ -27,12 +27,32 @@ public class Movement : MonoBehaviour
 
         playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        //TEST!!!
         if (isMoving)
         {
-            ac.playSFX(ac.audios[1]);
+            if (!ac.sfxSource.isPlaying)
+            {
+                ac.playSFX(ac.audios[0]);
+            }
+            else
+            {
+                ac.sfxSource.Stop();
+            }
+        }
+        //TEST!!!
+        if (!isGrounded)
+        {
+            if (!ac.sfxSource.isPlaying)
+            {
+                ac.playSFX(ac.audios[1]);
+            }
+            else
+            {
+                ac.sfxSource.Stop();
+            }
         }
 
-        if(playerInput.x != 0)
+        if (playerInput.x != 0)
         {
             isMoving = true;
             if (playerInput.x < 0) 
