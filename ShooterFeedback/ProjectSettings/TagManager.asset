@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - WinBlock
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -39,6 +40,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sky
+    uniqueID: 102212591
+    locked: 0
+  - name: Clouds
+    uniqueID: 1500092405
+    locked: 0
+  - name: Mountain
+    uniqueID: 4112820025
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

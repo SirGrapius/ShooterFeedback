@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] PlayerHealth health;
+    [SerializeField] AudioController AC;
     void Start()
     {
         
@@ -36,6 +37,7 @@ public class SceneLoader : MonoBehaviour
                 {
                     yield return new WaitForSeconds(5);
                     SceneManager.LoadScene("WinScreen");
+                    AC.playMusic(AC.audios[0]); //change audio to victory music
                     break;
                 }
 
@@ -44,6 +46,7 @@ public class SceneLoader : MonoBehaviour
                 {
                     yield return new WaitForSeconds(5);
                     SceneManager.LoadScene("GameOverScreen");
+                    AC.playMusic(AC.audios[0]); //change audio to death music
                     break;
                 }
         }
