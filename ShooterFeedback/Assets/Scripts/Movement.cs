@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     Vector2 playerInput;
 
     [SerializeField] AudioController ac;
+    [SerializeField] AudioSource walkSource;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask groundedLayers;
     Rigidbody2D rb;
@@ -27,20 +28,20 @@ public class Movement : MonoBehaviour
 
         playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        //TEST!!!
-        if (isMoving)
+        if (!isMoving)
         {
-            if (!ac.sfxSource.isPlaying)
+            if (!walkSource.isPlaying)
             {
-                ac.playSFX(ac.audios[0]);
+                walkSource.Play();
             }
             else
             {
-                ac.sfxSource.Stop();
+                walkSource.Stop();
             }
         }
-        //TEST!!!
-        if (!isGrounded)
+
+        //lite janky, spelar bara ljudet ifall man trycker snabbt
+        if (isGrounded)
         {
             if (!ac.sfxSource.isPlaying)
             {
@@ -63,6 +64,10 @@ public class Movement : MonoBehaviour
             {
                 rb.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
+        }
+        else if (playerInput.x == 0)
+        {
+            isMoving = false;
         }
 
 
