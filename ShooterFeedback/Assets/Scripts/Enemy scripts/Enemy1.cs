@@ -11,6 +11,8 @@ public class Enemy1 : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float ledgeChecklenght = 1f;
 
+    public int damageAmount = 10;
+
     private bool isFacingRight = true;
     private void Start()
     {
@@ -23,7 +25,19 @@ public class Enemy1 : MonoBehaviour
         return ledgeChecklenght;
     }
 
-    private void FixedUpdate()
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damageAmount);
+            }
+        }
+    }
+    
+        private void FixedUpdate()
     {
         rb.linearVelocityX = transform.right.x * enemyMovementSpeed;
 
@@ -45,5 +59,7 @@ public class Enemy1 : MonoBehaviour
         }
      
         Debug.DrawRay(ledgeCheckPosition.position, Vector2.down * ledgeChecklenght, UnityEngine.Color.red);
+
+
     }
 }   
