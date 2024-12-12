@@ -6,11 +6,12 @@ TagManager:
   tags:
   - WinBlock
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - Decorations
   - Water
   - UI
   - 
