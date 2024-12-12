@@ -10,6 +10,8 @@ public class Enemy1 : MonoBehaviour
     [SerializeField] bool isGrounded;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float ledgeChecklenght = 1f;
+    [SerializeField] AudioClip Walking;
+    
 
     public int damageAmount = 10;
 
