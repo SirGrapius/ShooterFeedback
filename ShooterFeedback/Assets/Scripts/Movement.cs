@@ -15,10 +15,12 @@ public class Movement : MonoBehaviour
     [SerializeField] AudioSource walkSource;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask groundedLayers;
+    [SerializeField] Animator myAnim;
     Rigidbody2D rb;
 
     void Start()
     {
+        myAnim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -39,8 +41,12 @@ public class Movement : MonoBehaviour
                 walkSource.Stop();
             }
         }
+        else
+        {
+            myAnim.Play("Walking");
+        }
 
-        //lite janky, spelar bara ljudet ifall man trycker snabbt
+
         if (isGrounded)
         {
             if (!ac.sfxSource.isPlaying)
@@ -51,6 +57,10 @@ public class Movement : MonoBehaviour
             {
                 ac.sfxSource.Stop();
             }
+        }
+        else
+        {
+            myAnim.Play("Jumping");
         }
 
         if (playerInput.x != 0)
