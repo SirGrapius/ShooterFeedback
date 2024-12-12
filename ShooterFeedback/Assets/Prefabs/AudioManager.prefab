@@ -306,4 +306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mSource: {fileID: 6902675428068692412}
   sfxSource: {fileID: 8931856340341920746}
-  audios: []
+  audios:
+  - {fileID: 8300000, guid: cb3c22bcb50b1b44b8c6f84c14a89af8, type: 3}
+  - {fileID: 8300000, guid: 7372fc68208c50041bad0ec2955a79fa, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}

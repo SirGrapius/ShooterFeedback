@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    [SerializeField] AudioSource mSource;
-    [SerializeField] AudioSource sfxSource;
+    [SerializeField] public AudioSource mSource;
+    [SerializeField] public AudioSource sfxSource;
     [SerializeField] public AudioClip[] audios;
 
     public void playSFX(AudioClip clip)
