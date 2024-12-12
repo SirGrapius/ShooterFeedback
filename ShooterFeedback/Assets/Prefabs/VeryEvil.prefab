@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5696702003351138828}
   - component: {fileID: 2282947047560785311}
   - component: {fileID: 9184056580760949866}
+  - component: {fileID: 7421392642842861640}
+  - component: {fileID: 7478724951164492945}
   m_Layer: 6
   m_Name: VeryEvil
   m_TagString: Enemy
@@ -196,7 +198,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867767695607698831}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74b4255ef803b074089fa41ef383d11f, type: 3}
   m_Name: 
@@ -219,6 +221,34 @@ MonoBehaviour:
   mSource: {fileID: 0}
   sfxSource: {fileID: 0}
   audios: []
+--- !u!114 &7421392642842861640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867767695607698831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ca942dc8179834f914178809de56c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 7421392642842861640}
+  flashKey: 0
+--- !u!114 &7478724951164492945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867767695607698831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8d92ec15f4a3349a73ecec7dd0bc07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 9f86ee2cab0dcd9458da149c1ebb13d8, type: 2}
+  duration: 0.5
 --- !u!1 &4006878065600456284
 GameObject:
   m_ObjectHideFlags: 0
