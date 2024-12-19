@@ -40,10 +40,11 @@ public class Movement : MonoBehaviour
             {
                 walkSource.Stop();
             }
+            myAnim.Play("PlayerIdle");
         }
         else
         {
-            myAnim.Play("Walking");
+            myAnim.Play("PlayerWalk");
         }
 
 
@@ -60,7 +61,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            myAnim.Play("Jumping");
+            //myAnim.Play("PlayerJump");
         }
 
         if (playerInput.x != 0)
@@ -104,6 +105,7 @@ public class Movement : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        rigidbody.AddForceX(5);
     }
 
 }
