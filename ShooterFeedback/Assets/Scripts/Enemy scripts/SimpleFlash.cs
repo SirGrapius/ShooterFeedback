@@ -4,6 +4,8 @@ using UnityEngine;
 
  public class SimpleFlash : MonoBehaviour
 {
+   // TEST
+    
     #region Datamembers
 
     #region Editor Settings
