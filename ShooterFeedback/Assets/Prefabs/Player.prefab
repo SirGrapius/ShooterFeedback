@@ -321,13 +321,14 @@ MonoBehaviour:
   speed: 12
   jumpForce: 28
   groundCheckerRadius: 0.3
+  health: 100
   ac: {fileID: 0}
   walkSource: {fileID: 1571351236133664758}
   groundChecker: {fileID: 1369162339575851055}
   groundedLayers:
     serializedVersion: 2
     m_Bits: 8
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 3810739741206473449}
   rigidbody: {fileID: 0}
 --- !u!114 &6350724644726789906
 MonoBehaviour:
@@ -341,7 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97bcc2f25359b314095a93484c8046ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 0}
+  player: {fileID: 0}
   AC: {fileID: 0}
 --- !u!114 &5030313534439388161
 MonoBehaviour:
@@ -368,6 +369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3260937586468304944}
   - component: {fileID: 3358863076036602400}
+  - component: {fileID: 3810739741206473449}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -445,3 +447,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3810739741206473449
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8542931575747431974}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a7c868faec99fe4387e6d046b989891, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
