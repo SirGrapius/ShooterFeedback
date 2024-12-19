@@ -2127,6 +2127,10 @@ PrefabInstance:
       propertyPath: m_ContactCaptureLayers.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5030313534439388161, guid: fcb65e140432a14418a1ef0acd3c7dde, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5208338299992212307, guid: fcb65e140432a14418a1ef0acd3c7dde, type: 3}
       propertyPath: m_Name
       value: Player
