@@ -328,6 +328,7 @@ MonoBehaviour:
   groundedLayers:
     serializedVersion: 2
     m_Bits: 8
+  myAnim: {fileID: 0}
 --- !u!114 &8396241196946816401
 MonoBehaviour:
   m_ObjectHideFlags: 0

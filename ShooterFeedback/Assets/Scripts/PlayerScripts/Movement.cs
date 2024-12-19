@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float speed = 5;
     [SerializeField] float jumpForce = 10;
     [SerializeField] float groundCheckerRadius;
+    [SerializeField] public int health = 100;
 
     Vector2 playerInput;
 
@@ -15,17 +16,18 @@ public class Movement : MonoBehaviour
     [SerializeField] AudioSource walkSource;
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask groundedLayers;
-    Rigidbody2D rb;
+    [SerializeField] Animator myAnim;
+    [SerializeField] Rigidbody2D rigidbody;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        myAnim = GetComponent<Animator>();
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
 
     void Update()
     {
-
         playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         if (!isMoving)
@@ -39,8 +41,12 @@ public class Movement : MonoBehaviour
                 walkSource.Stop();
             }
         }
+        else
+        {
+            myAnim.Play("Walking");
+        }
 
-        //lite janky, spelar bara ljudet ifall man trycker snabbt
+
         if (isGrounded)
         {
             if (!ac.sfxSource.isPlaying)
@@ -52,17 +58,21 @@ public class Movement : MonoBehaviour
                 ac.sfxSource.Stop();
             }
         }
+        else
+        {
+            myAnim.Play("Jumping");
+        }
 
         if (playerInput.x != 0)
         {
             isMoving = true;
             if (playerInput.x < 0) 
-            { 
-                rb.transform.rotation = Quaternion.Euler(0, 180, 0);
+            {
+                rigidbody.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
             if (playerInput.x > 0)
             {
-                rb.transform.rotation = Quaternion.Euler(0, 0, 0);
+                rigidbody.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
         else if (playerInput.x == 0)
@@ -73,8 +83,8 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rb.linearVelocity = new Vector2(0,0);
-            rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+            rigidbody.linearVelocity = new Vector2(0,0);
+            rigidbody.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
 
         isGrounded = Physics2D.OverlapCircle(groundChecker.position, groundCheckerRadius, groundedLayers);
@@ -88,6 +98,12 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocityX = playerInput.x * speed;
+        rigidbody.linearVelocityX = playerInput.x * speed;
     }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+    }
+
 }

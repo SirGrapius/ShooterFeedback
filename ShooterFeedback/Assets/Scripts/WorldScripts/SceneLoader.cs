@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] PlayerHealth health;
+    [SerializeField] Movement player;
     [SerializeField] AudioController AC;
     void Start()
     {
@@ -14,7 +14,7 @@ public class SceneLoader : MonoBehaviour
 
     void Update()
     {
-        if (health.health <= 0)
+        if (player.health <= 0)
         {
             StartCoroutine(ScreenLoadProcess(1));
         }
