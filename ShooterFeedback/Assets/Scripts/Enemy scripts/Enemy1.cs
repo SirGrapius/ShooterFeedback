@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Enemy1 : MonoBehaviour
 {
-  // need playhealth scripts
+  // need playh
     
     Rigidbody2D rb;
     [SerializeField] int enemylifes;
@@ -33,10 +33,10 @@ public class Enemy1 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-       //     PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-     //       if (playerHealth != null)
+        Movement playerHealth = collision.gameObject.GetComponent<Movement>();
+         if (playerHealth != null)
             {
-    //            playerHealth.TakeDamage(damageAmount);
+              playerHealth.TakeDamage(damageAmount);
             }
         }
     }
