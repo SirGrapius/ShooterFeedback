@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float jumpForce = 10;
     [SerializeField] float groundCheckerRadius;
     [SerializeField] public int health = 100;
+    [SerializeField] float knockbackForce = 10;
 
     Vector2 playerInput;
 
@@ -21,7 +22,6 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        myAnim = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -40,9 +40,12 @@ public class Movement : MonoBehaviour
             {
                 walkSource.Stop();
             }
-            myAnim.Play("PlayerIdle");
+            if (isGrounded)
+            {
+                myAnim.Play("PlayerIdle");
+            }
         }
-        else
+        else if (isGrounded)
         {
             myAnim.Play("PlayerWalk");
         }
@@ -59,9 +62,9 @@ public class Movement : MonoBehaviour
                 ac.sfxSource.Stop();
             }
         }
-        else
+        else if (isMoving)
         {
-            //myAnim.Play("PlayerJump");
+            myAnim.Play("PlayerJump");
         }
 
         if (playerInput.x != 0)
@@ -102,10 +105,12 @@ public class Movement : MonoBehaviour
         rigidbody.linearVelocityX = playerInput.x * speed;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Collider2D other)
     {
         health -= damage;
-        rigidbody.AddForceX(5);
+        Vector2 difference = (transform.position - other.transform.position).normalized;
+        Vector2 force = difference * knockbackForce;
+        rigidbody.AddForce(force, ForceMode2D.Impulse);
     }
 
 }

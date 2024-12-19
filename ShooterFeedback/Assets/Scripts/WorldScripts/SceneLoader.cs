@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] AudioController AC;
     void Start()
     {
-        
+        player = GetComponent<Movement>();
     }
 
 
