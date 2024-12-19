@@ -108,7 +108,6 @@ public class Movement : MonoBehaviour
     public void TakeDamage(int damage, Collider2D other)
     {
         health -= damage;
-        rigidbody.AddForceX(15);
         Vector2 difference = (transform.position - other.transform.position).normalized;
         Vector2 force = difference * knockbackForce;
         rigidbody.AddForce(force, ForceMode2D.Impulse);
