@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 3619202486713060181}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.12, y: -0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -322,6 +322,7 @@ MonoBehaviour:
   jumpForce: 28
   groundCheckerRadius: 0.3
   health: 100
+  knockbackForce: 10
   ac: {fileID: 0}
   walkSource: {fileID: 1571351236133664758}
   groundChecker: {fileID: 1369162339575851055}
@@ -386,7 +387,7 @@ Transform:
   m_GameObject: {fileID: 8542931575747431974}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.109999895, z: 0}
+  m_LocalPosition: {x: 0, y: 0.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

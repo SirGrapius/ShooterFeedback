@@ -6,14 +6,16 @@ public class Enemy1 : MonoBehaviour
   // need playh
     
     Rigidbody2D rb;
-    [SerializeField] int enemylifes;
+    
     [SerializeField] float enemyMovementSpeed;
     [SerializeField] Transform ledgeCheckPosition;
     [SerializeField] bool isGrounded;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float ledgeChecklenght = 1f;
     [SerializeField] AudioClip Walking;
-    
+    [SerializeField] int EnemyHealth = 50;
+    private int currentHealth;
+
 
     public int damageAmount = 10;
 
@@ -23,7 +25,8 @@ public class Enemy1 : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        currentHealth = EnemyHealth;
+
     }
 
     private float GetLedgeChecklenght()
@@ -31,9 +34,27 @@ public class Enemy1 : MonoBehaviour
         return ledgeChecklenght;
     }
 
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        Debug.Log("Enemy Health: " + currentHealth);
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
 
-    
-    private void OnCollisionEnter2D(Collision2D collision)
+    void Die()
+    {
+        Debug.Log("Enemy died!");
+     
+        Destroy(gameObject);
+    }
+
+
+
+
+private void OnCollisionEnter2D(Collision2D collision)
    {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -66,7 +87,8 @@ public class Enemy1 : MonoBehaviour
             }
             
         }
-        
+  
+
 
         Debug.DrawRay(ledgeCheckPosition.position, Vector2.down * ledgeChecklenght, UnityEngine.Color.red);
 
