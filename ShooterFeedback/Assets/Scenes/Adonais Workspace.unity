@@ -351,7 +351,7 @@ Transform:
   m_GameObject: {fileID: 156525554}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 271.3, y: -8.5, z: 0}
+  m_LocalPosition: {x: 200, y: -8.5, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1404,13 +1404,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: VeryEvil
       objectReference: {fileID: 0}
+    - target: {fileID: 3819130837645479848, guid: addeccff6227abf409ba8a1a92420bbc, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819130837645479848, guid: addeccff6227abf409ba8a1a92420bbc, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135916177919494857, guid: addeccff6227abf409ba8a1a92420bbc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7771661
+      objectReference: {fileID: 0}
     - target: {fileID: 7135916177919494857, guid: addeccff6227abf409ba8a1a92420bbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -83.8
       objectReference: {fileID: 0}
     - target: {fileID: 7135916177919494857, guid: addeccff6227abf409ba8a1a92420bbc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.4
+      value: -4.28
       objectReference: {fileID: 0}
     - target: {fileID: 7135916177919494857, guid: addeccff6227abf409ba8a1a92420bbc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2149,6 +2161,18 @@ PrefabInstance:
       propertyPath: ac
       value: 
       objectReference: {fileID: 8032257264822707}
+    - target: {fileID: 3360965783205733495, guid: fcb65e140432a14418a1ef0acd3c7dde, type: 3}
+      propertyPath: jumpForce
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3360965783205733495, guid: fcb65e140432a14418a1ef0acd3c7dde, type: 3}
+      propertyPath: knockbackForce
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3360965783205733495, guid: fcb65e140432a14418a1ef0acd3c7dde, type: 3}
+      propertyPath: knockbackDuration
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5208338299992212307, guid: fcb65e140432a14418a1ef0acd3c7dde, type: 3}
       propertyPath: m_Name
       value: Player

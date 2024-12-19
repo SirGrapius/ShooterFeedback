@@ -11,8 +11,11 @@ GameObject:
   - component: {fileID: 7935054842634637801}
   - component: {fileID: 6092359313713706814}
   - component: {fileID: 8657956002609209256}
-  - component: {fileID: 7423064045411567090}
   - component: {fileID: 4600274322052804995}
+  - component: {fileID: 7423064045411567090}
+  - component: {fileID: 8479379165742337054}
+  - component: {fileID: 5260546557721527096}
+  - component: {fileID: 3621267755379605905}
   m_Layer: 0
   m_Name: SlimeEnemy
   m_TagString: Untagged
@@ -117,29 +120,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &7423064045411567090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3238391899630478885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc4bc2a8e1d4d6b47b10c9d215bb439e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemylifes: 0
-  enemyMovementSpeed: 5
-  ledgeCheckPosition: {fileID: 0}
-  isGrounded: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  ledgeChecklenght: 1
-  Walking: {fileID: 8300000, guid: 105fb050f1ecbac49a8866f1c1417041, type: 3}
-  damageAmount: 10
+  m_Constraints: 4
 --- !u!61 &4600274322052804995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -186,6 +167,71 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.63, y: 6.440388}
   m_EdgeRadius: 0
+--- !u!114 &7423064045411567090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238391899630478885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4bc2a8e1d4d6b47b10c9d215bb439e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemylifes: 5
+  enemyMovementSpeed: 2.5
+  ledgeCheckPosition: {fileID: 5197514321792577263}
+  isGrounded: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  ledgeChecklenght: 0.5
+  Walking: {fileID: 8300000, guid: 105fb050f1ecbac49a8866f1c1417041, type: 3}
+  damageAmount: 10
+--- !u!114 &8479379165742337054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238391899630478885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b4255ef803b074089fa41ef383d11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointPickUp: {fileID: 0}
+  numberOfPoints: 3
+  damageSfx: {fileID: 0}
+--- !u!114 &5260546557721527096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238391899630478885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ca942dc8179834f914178809de56c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 5260546557721527096}
+  flashKey: 0
+--- !u!114 &3621267755379605905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238391899630478885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8d92ec15f4a3349a73ecec7dd0bc07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 9f86ee2cab0dcd9458da149c1ebb13d8, type: 2}
+  duration: 0.5
 --- !u!1 &3776324975382887770
 GameObject:
   m_ObjectHideFlags: 0
