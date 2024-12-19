@@ -18,6 +18,8 @@ public class Enemy1 : MonoBehaviour
     public int damageAmount = 10;
 
     private bool isFacingRight = true;
+    private Collider2D other;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,8 +31,10 @@ public class Enemy1 : MonoBehaviour
         return ledgeChecklenght;
     }
 
+
+    
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+   {
         if (collision.gameObject.CompareTag("Player"))
         {
         Movement playerHealth = collision.gameObject.GetComponent<Movement>();
@@ -61,9 +65,9 @@ public class Enemy1 : MonoBehaviour
             }
             
         }
-     
-        Debug.DrawRay(ledgeCheckPosition.position, Vector2.down * ledgeChecklenght, UnityEngine.Color.red);
+        other = this.GetComponent<Collider2D>();
 
+        Debug.DrawRay(ledgeCheckPosition.position, Vector2.down * ledgeChecklenght, UnityEngine.Color.red);
 
     }
 }   
