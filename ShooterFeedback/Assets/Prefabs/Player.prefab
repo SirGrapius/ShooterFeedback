@@ -204,7 +204,6 @@ GameObject:
   - component: {fileID: 2471281032981603828}
   - component: {fileID: 4780969559469005849}
   - component: {fileID: 3360965783205733495}
-  - component: {fileID: 8396241196946816401}
   - component: {fileID: 6350724644726789906}
   - component: {fileID: 5030313534439388161}
   m_Layer: 0
@@ -329,19 +328,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   myAnim: {fileID: 0}
---- !u!114 &8396241196946816401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5208338299992212307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058a04dc53c6d5245bbe6a9771376b0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
+  rigidbody: {fileID: 0}
 --- !u!114 &6350724644726789906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97bcc2f25359b314095a93484c8046ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 8396241196946816401}
+  health: {fileID: 0}
   AC: {fileID: 0}
 --- !u!114 &5030313534439388161
 MonoBehaviour:
@@ -447,12 +434,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4756802139961417842, guid: 5e5eed68c5655984fbbea328cabacaf6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4b77569f37d2e24c9ef74b3dfe09b9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.45, y: 7.4}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
