@@ -40,7 +40,8 @@ public class Enemy1 : MonoBehaviour
         Movement playerHealth = collision.gameObject.GetComponent<Movement>();
          if (playerHealth != null)
             {
-              playerHealth.TakeDamage(damageAmount);
+              playerHealth.TakeDamage(damageAmount, other = this.GetComponent<Collider2D>());
+
             }
         }
     }
@@ -65,7 +66,7 @@ public class Enemy1 : MonoBehaviour
             }
             
         }
-        other = this.GetComponent<Collider2D>();
+        
 
         Debug.DrawRay(ledgeCheckPosition.position, Vector2.down * ledgeChecklenght, UnityEngine.Color.red);
 
