@@ -190,6 +190,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   ledgeChecklenght: 0.5
+  Walking: {fileID: 0}
   damageAmount: 10
 --- !u!114 &2282947047560785311
 MonoBehaviour:
@@ -198,12 +199,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867767695607698831}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74b4255ef803b074089fa41ef383d11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointPickUp: {fileID: 0}
+  pointPickUp: {fileID: 1867767695607698831}
   numberOfPoints: 3
   damageSfx: {fileID: 8300000, guid: 105fb050f1ecbac49a8866f1c1417041, type: 3}
 --- !u!114 &9184056580760949866
@@ -213,7 +214,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867767695607698831}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23b90c16df7a69e42b748011187c9159, type: 3}
   m_Name: 
