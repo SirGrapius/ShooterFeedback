@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] bool isMoving;
+    [SerializeField] public bool isMoving;
     [SerializeField] bool isGrounded;
     [SerializeField] bool isKnockback;
     [SerializeField] float speed = 5;
@@ -21,13 +21,13 @@ public class Movement : MonoBehaviour
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask groundedLayers;
     [SerializeField] Animator myAnim;
-    [SerializeField] Rigidbody2D rigidbody;
+    [SerializeField] Rigidbody2D rb;
 
 
 
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
@@ -77,11 +77,11 @@ public class Movement : MonoBehaviour
             isMoving = true;
             if (playerInput.x < 0)
             {
-                rigidbody.transform.rotation = Quaternion.Euler(0, 180, 0);
+                rb.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
             if (playerInput.x > 0)
             {
-                rigidbody.transform.rotation = Quaternion.Euler(0, 0, 0);
+                rb.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
         else if (playerInput.x == 0)
@@ -92,8 +92,8 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rigidbody.linearVelocity = new Vector2(0, 0);
-            rigidbody.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+            rb.linearVelocity = new Vector2(0, 0);
+            rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
 
         isGrounded = Physics2D.OverlapCircle(groundChecker.position, groundCheckerRadius, groundedLayers);
@@ -109,7 +109,7 @@ public class Movement : MonoBehaviour
     {
         if (!isKnockback)
         {
-            rigidbody.linearVelocityX = playerInput.x * speed;
+            rb.linearVelocityX = playerInput.x * speed;
 
         }
     }
@@ -124,7 +124,7 @@ public class Movement : MonoBehaviour
     {
         isKnockback = true;
         Vector2 force = direction * knockbackForce;
-        rigidbody.AddForce(force, ForceMode2D.Impulse);
+        rb.AddForce(force, ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(knockbackDuration);
 

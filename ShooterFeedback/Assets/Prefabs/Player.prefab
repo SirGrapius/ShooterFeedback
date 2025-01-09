@@ -318,10 +318,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMoving: 0
   isGrounded: 1
+  isKnockback: 0
   speed: 12
   jumpForce: 28
   groundCheckerRadius: 0.3
   health: 100
+  knockbackForce: 10
+  knockbackDuration: 5
   ac: {fileID: 0}
   walkSource: {fileID: 1571351236133664758}
   groundChecker: {fileID: 1369162339575851055}

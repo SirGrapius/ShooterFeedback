@@ -6,12 +6,12 @@ public class SquashandStretch : MonoBehaviour
     public float Stretch = 0.1f;
     [SerializeField] private Transform squashParent;
 
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
     private Vector3 originalScale;
 
     private void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         originalScale = Sprite.transform.localScale;
 
         if (!squashParent)
@@ -28,7 +28,7 @@ public class SquashandStretch : MonoBehaviour
         squashParent.localScale = Vector3.one;
         squashParent.position = transform.position;
 
-        Vector3 velocity = rigidbody.linearVelocity;
+        Vector3 velocity = rb.linearVelocity;
         if (velocity.sqrMagnitude > 0.01f)
         {
             squashParent.rotation = Quaternion.FromToRotation(Vector3.right, velocity);
