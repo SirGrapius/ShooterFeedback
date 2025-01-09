@@ -1,16 +1,33 @@
+using System.Collections;
 using UnityEngine;
 
-public class DamageFlash : MonoBehaviour
+public class PlayerDamageFeedback : MonoBehaviour
 {
-    [SerializeField] private DamageFlash flashEffect;
-    [SerializeField] private KeyCode flashKey;
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
+    public Color damageColor = Color.red;
+    public float feedbackDuration = 0.2f;
+    public int blinkCount = 3;
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(flashKey))
-        {
-            flashEffect.Update();
-        }
+        spriteRenderer = GetComponent<SpriteRenderer>();
+       originalColor = spriteRenderer.color;
     }
 
+    public void ShowDamage()
+    {
+        StartCoroutine(FlashDamage());
+    }
+
+    private IEnumerator FlashDamage()
+    {
+        for (int i = 0; i < blinkCount; i++)
+        {
+            spriteRenderer.color = damageColor;
+            yield return new WaitForSeconds(feedbackDuration / (2 * blinkCount));
+            spriteRenderer.color = originalColor;
+            yield return new WaitForSeconds(feedbackDuration / (2 * blinkCount));
+        }
+    }
 }

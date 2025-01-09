@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4bc2a8e1d4d6b47b10c9d215bb439e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemylifes: 0
   enemyMovementSpeed: 5
   ledgeCheckPosition: {fileID: 0}
   isGrounded: 0
@@ -139,6 +138,7 @@ MonoBehaviour:
     m_Bits: 0
   ledgeChecklenght: 1
   Walking: {fileID: 8300000, guid: 105fb050f1ecbac49a8866f1c1417041, type: 3}
+  EnemyHealth: 0
   damageAmount: 10
 --- !u!61 &4600274322052804995
 BoxCollider2D:

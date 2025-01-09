@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Enemy1 : MonoBehaviour
 {
-  // need playh
+  
     
     Rigidbody2D rb;
     
