@@ -29,7 +29,7 @@ public class EnemyManagement : MonoBehaviour
     protected virtual void Die()
     {
         StopAllCoroutines();
-     //   rb.Enemy1 = false;
+      //  rb.Enemy1 = false;
         col.enabled = false;
         anim.SetTrigger("dead");
         AudioSource.PlayClipAtPoint(damageSfx, transform.position);

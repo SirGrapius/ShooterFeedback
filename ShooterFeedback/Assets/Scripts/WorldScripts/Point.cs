@@ -9,6 +9,8 @@ public class Point : MonoBehaviour
     private Collider2D col;
     private Rigidbody2D rb;
 
+   
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
