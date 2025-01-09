@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 3ac48538d1103b34ea4c31f4160ddabb
+guid: 4da40c2ce4666e245b7baf879836c3fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8159191366385942960
-    second: Emerald_pickup0003_0
+      213: -4789827017121178633
+    second: emerald_pickup_interact0002_0
   - first:
-      213: -4117352493081351279
-    second: Emerald_pickup0003_1
+      213: 8043857172325212402
+    second: emerald_pickup_interact0002_1
   - first:
-      213: 7735616925084183682
-    second: Emerald_pickup0003_2
+      213: -8882375648539813689
+    second: emerald_pickup_interact0002_2
   - first:
-      213: 1904671638315978136
-    second: Emerald_pickup0003_3
+      213: 4136830456155940214
+    second: emerald_pickup_interact0002_3
+  - first:
+      213: -8066010855936478034
+    second: emerald_pickup_interact0002_4
+  - first:
+      213: -3545789981258423862
+    second: emerald_pickup_interact0002_5
+  - first:
+      213: 3298942283164406099
+    second: emerald_pickup_interact0002_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Emerald_pickup0003_0
+      name: emerald_pickup_interact0002_0
       rect:
         serializedVersion: 2
-        x: 942
-        y: 1259
-        width: 18
-        height: 12
+        x: 611
+        y: 906
+        width: 11
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05eb1287eaab4ce80800000000000000
-      internalID: -8159191366385942960
+      spriteID: 7fb5cec94bd178db0800000000000000
+      internalID: -4789827017121178633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emerald_pickup0003_1
+      name: emerald_pickup_interact0002_1
       rect:
         serializedVersion: 2
-        x: 356
-        y: 89
-        width: 744
-        height: 1166
+        x: 581
+        y: 813
+        width: 81
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19b21d2e8b93cd6c0800000000000000
-      internalID: -4117352493081351279
+      spriteID: 2f02c64ea7581af60800000000000000
+      internalID: 8043857172325212402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emerald_pickup0003_2
+      name: emerald_pickup_interact0002_2
       rect:
         serializedVersion: 2
-        x: 1100
-        y: 504
-        width: 30
-        height: 678
+        x: 659
+        y: 678
+        width: 126
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28c642abb9e6a5b60800000000000000
-      internalID: 7735616925084183682
+      spriteID: 7c8543398667bb480800000000000000
+      internalID: -8882375648539813689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emerald_pickup0003_3
+      name: emerald_pickup_interact0002_3
       rect:
         serializedVersion: 2
-        x: 385
-        y: 0
-        width: 19
-        height: 122
+        x: 775
+        y: 813
+        width: 72
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +199,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89dc59f73c0ce6a10800000000000000
-      internalID: 1904671638315978136
+      spriteID: 675213bc169f86930800000000000000
+      internalID: 4136830456155940214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerald_pickup_interact0002_4
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 704
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea43671bcd5cf0090800000000000000
+      internalID: -8066010855936478034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerald_pickup_interact0002_5
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 579
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1e3f66cc2dacec0800000000000000
+      internalID: -3545789981258423862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerald_pickup_interact0002_6
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 644
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351d78a278238cd20800000000000000
+      internalID: 3298942283164406099
       vertices: []
       indices: 
       edges: []
@@ -210,10 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Emerald_pickup0003_0: -8159191366385942960
-      Emerald_pickup0003_1: -4117352493081351279
-      Emerald_pickup0003_2: 7735616925084183682
-      Emerald_pickup0003_3: 1904671638315978136
+      emerald_pickup_interact0002_0: -4789827017121178633
+      emerald_pickup_interact0002_1: 8043857172325212402
+      emerald_pickup_interact0002_2: -8882375648539813689
+      emerald_pickup_interact0002_3: 4136830456155940214
+      emerald_pickup_interact0002_4: -8066010855936478034
+      emerald_pickup_interact0002_5: -3545789981258423862
+      emerald_pickup_interact0002_6: 3298942283164406099
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
