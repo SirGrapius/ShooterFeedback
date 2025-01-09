@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 0de39124ff4604c4ea432ea2422c8f57
+guid: 8a40190627d84bd48b4e2ae5f20f3ac4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1598743229449645637
-    second: gooberwizard0002_0
+      213: 2536905681587193449
+    second: beholdmymagicspell0001_0
   - first:
-      213: 8838677591168708483
-    second: gooberwizard0002_1
+      213: 4709069814636437825
+    second: beholdmymagicspell0001_1
+  - first:
+      213: 7362765676306587904
+    second: beholdmymagicspell0001_2
+  - first:
+      213: 5621717827780227084
+    second: beholdmymagicspell0001_3
+  - first:
+      213: -5449039833302989331
+    second: beholdmymagicspell0001_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,10 +61,10 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5, y: 0.65}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 155, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -103,45 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gooberwizard0002_0
+      name: beholdmymagicspell0001_0
       rect:
         serializedVersion: 2
-        x: 803
-        y: 155
-        width: 819
-        height: 720
+        x: 1446
+        y: 524
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb1d799d08f10d9e0800000000000000
-      internalID: -1598743229449645637
+      spriteID: 966ccabb646e43320800000000000000
+      internalID: 2536905681587193449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gooberwizard0002_1
+      name: beholdmymagicspell0001_1
       rect:
         serializedVersion: 2
-        x: 1057
-        y: 864
-        width: 106
-        height: 99
+        x: 1461
+        y: 405
+        width: 53
+        height: 210
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38fe0d9907a49aa70800000000000000
-      internalID: 8838677591168708483
+      spriteID: 1416be3fb0af95140800000000000000
+      internalID: 4709069814636437825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beholdmymagicspell0001_2
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 502
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00161bc7f5ccd2660800000000000000
+      internalID: 7362765676306587904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beholdmymagicspell0001_3
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 386
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c003258449a540e40800000000000000
+      internalID: 5621717827780227084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beholdmymagicspell0001_4
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 372
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de58501542f1164b0800000000000000
+      internalID: -5449039833302989331
       vertices: []
       indices: 
       edges: []
@@ -151,7 +226,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -160,8 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gooberwizard0002_0: -1598743229449645637
-      gooberwizard0002_1: 8838677591168708483
+      beholdmymagicspell0001_0: 2536905681587193449
+      beholdmymagicspell0001_1: 4709069814636437825
+      beholdmymagicspell0001_2: 7362765676306587904
+      beholdmymagicspell0001_3: 5621717827780227084
+      beholdmymagicspell0001_4: -5449039833302989331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
