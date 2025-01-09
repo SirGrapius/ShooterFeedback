@@ -1,6 +1,8 @@
+using Mono.Cecil;
 using System.Collections;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Movement : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class Movement : MonoBehaviour
     [SerializeField] public int health = 100;
     [SerializeField] float knockbackForce = 10;
     [SerializeField] float knockbackDuration = 5;
+    [SerializeField] UnityEvent myEvent;
 
     Vector2 playerInput;
 
@@ -21,6 +24,7 @@ public class Movement : MonoBehaviour
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask groundedLayers;
     [SerializeField] Animator myAnim;
+    [SerializeField] Animator smokeAnim;
     [SerializeField] Rigidbody2D rb;
 
 
@@ -53,6 +57,7 @@ public class Movement : MonoBehaviour
         else if (isGrounded)
         {
             myAnim.Play("PlayerWalk");
+            myEvent.Invoke();
         }
 
 
