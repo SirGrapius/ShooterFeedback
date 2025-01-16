@@ -83,6 +83,7 @@ public class Movement : MonoBehaviour
         }
         else if (isMoving)
         {
+            StartCoroutine(endPuffCoroutine(0.2f));
             myAnim.Play("PlayerJump");
         }
 
