@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveOnSpawn: 0
   pickUpSfx: {fileID: 8300000, guid: 8f0f20e837756df4297144956c719bcd, type: 3}
+  pickupEffect: {fileID: 0}
 --- !u!61 &7134344208997853974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -210,7 +211,7 @@ Animation:
   m_GameObject: {fileID: 4044130676632236994}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 0bb7589251eb94c45be1f99050adc3b2, type: 2}
+  m_Animation: {fileID: 7400000, guid: 8d235b4b9f0f07a4b98809d1a172696f, type: 2}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
