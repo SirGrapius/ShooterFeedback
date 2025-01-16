@@ -179,7 +179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4bc2a8e1d4d6b47b10c9d215bb439e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemylifes: 5
   enemyMovementSpeed: 2.5
   ledgeCheckPosition: {fileID: 5197514321792577263}
   isGrounded: 0
@@ -188,6 +187,7 @@ MonoBehaviour:
     m_Bits: 0
   ledgeChecklenght: 0.5
   Walking: {fileID: 8300000, guid: 105fb050f1ecbac49a8866f1c1417041, type: 3}
+  EnemyHealth: 50
   damageAmount: 10
 --- !u!114 &8479379165742337054
 MonoBehaviour:
@@ -216,8 +216,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ca942dc8179834f914178809de56c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashEffect: {fileID: 5260546557721527096}
-  flashKey: 0
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  feedbackDuration: 0.2
+  blinkCount: 3
 --- !u!114 &3621267755379605905
 MonoBehaviour:
   m_ObjectHideFlags: 0
