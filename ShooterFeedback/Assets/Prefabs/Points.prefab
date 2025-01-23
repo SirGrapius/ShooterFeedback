@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7134344208997853974}
   - component: {fileID: 4850518402250361530}
   - component: {fileID: 6979433514008002229}
+  - component: {fileID: 8142770777005402544}
   m_Layer: 0
   m_Name: Points
   m_TagString: Untagged
@@ -88,7 +89,7 @@ SpriteRenderer:
   m_Size: {x: 10, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2889661286317766622
@@ -105,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveOnSpawn: 0
   pickUpSfx: {fileID: 8300000, guid: 8f0f20e837756df4297144956c719bcd, type: 3}
+  pickupEffect: {fileID: 0}
 --- !u!61 &7134344208997853974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -188,7 +190,7 @@ Animator:
   m_GameObject: {fileID: 4044130676632236994}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 16ffa3647af51404e9c1c03044834093, type: 2}
+  m_Controller: {fileID: 9100000, guid: 769fc253a27ff584195adc7427eb99fc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -200,3 +202,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &8142770777005402544
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044130676632236994}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 8d235b4b9f0f07a4b98809d1a172696f, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0

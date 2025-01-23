@@ -5,7 +5,7 @@ public class Point : MonoBehaviour
 {
     [SerializeField] private bool moveOnSpawn = false;
     [SerializeField] private AudioClip pickUpSfx;
-
+    [SerializeField] Animator pickupEffect;
     private Collider2D col;
     private Rigidbody2D rb;
 
@@ -51,8 +51,12 @@ public class Point : MonoBehaviour
                 Debug.LogWarning("PickUpSfx is not assigned!");
             }
 
-            
+              
             Destroy(gameObject);
+
+        
+
+            
         }
     }
 
