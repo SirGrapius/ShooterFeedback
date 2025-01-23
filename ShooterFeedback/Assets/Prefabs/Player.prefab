@@ -323,24 +323,9 @@ MonoBehaviour:
   speed: 24
   jumpForce: 34
   groundCheckerRadius: 0.3
-  health: 100
   knockbackForce: 50
   knockbackDuration: 0.2
-  myEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8597702435912630248}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Moving
-          m_BoolArgument: 0
-        m_CallState: 2
+  health: 100
   ac: {fileID: 0}
   walkSource: {fileID: 1571351236133664758}
   groundChecker: {fileID: 1369162339575851055}

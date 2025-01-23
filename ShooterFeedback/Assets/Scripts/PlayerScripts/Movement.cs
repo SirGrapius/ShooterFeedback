@@ -6,25 +6,30 @@ using UnityEngine.Events;
 
 public class Movement : MonoBehaviour
 {
+    [Header("Movement Settings")]
     [SerializeField] public bool isMoving;
     [SerializeField] bool isGrounded;
     [SerializeField] bool isKnockback;
     [SerializeField] float speed = 5;
     [SerializeField] float jumpForce = 10;
     [SerializeField] float groundCheckerRadius;
-    [SerializeField] public int health = 100;
     [SerializeField] float knockbackForce = 10;
     [SerializeField] float knockbackDuration = 5;
-    [SerializeField] UnityEvent myEvent;
+
+    [SerializeField] public int health = 100;
 
     Vector2 playerInput;
 
+    [Header ("Audio")]
     [SerializeField] AudioController ac;
     [SerializeField] AudioSource walkSource;
+    [Header("GroundCheck")]
     [SerializeField] Transform groundChecker;
     [SerializeField] LayerMask groundedLayers;
+    [Header("Anim Settings")]
     [SerializeField] Animator myAnim;
     [SerializeField] Animator smokeAnim;
+   
     [SerializeField] Rigidbody2D rb;
 
 
@@ -32,6 +37,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
 
@@ -53,11 +59,14 @@ public class Movement : MonoBehaviour
             {
                 myAnim.Play("PlayerIdle");
             }
+            StartCoroutine(endPuffCoroutine(0.2f));
+            
         }
         else if (isGrounded)
         {
             myAnim.Play("PlayerWalk");
-            myEvent.Invoke();
+            smokeAnim.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+            smokeAnim.Play("SmokePuff");
         }
 
 
@@ -74,6 +83,7 @@ public class Movement : MonoBehaviour
         }
         else if (isMoving)
         {
+            StartCoroutine(endPuffCoroutine(0.2f));
             myAnim.Play("PlayerJump");
         }
 
@@ -134,5 +144,12 @@ public class Movement : MonoBehaviour
         yield return new WaitForSeconds(knockbackDuration);
 
         isKnockback = false;
+    }
+
+    private IEnumerator endPuffCoroutine(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        smokeAnim.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
     }
 }

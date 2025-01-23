@@ -8,18 +8,17 @@ using UnityEngine.Events;
 public class DecorationScript : MonoBehaviour
 {
     [SerializeField] int health = 4;
-    [SerializeField] bool pCollision = false;
+    [SerializeField] string animName;
     [SerializeField] UnityEngine.Color baseColor;
     [SerializeField] UnityEvent myEvent;
 
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Animator myAnim;
-    [SerializeField] Movement player;
     void Start()
     {
         myAnim = spriteRenderer.gameObject.GetComponent<Animator>();
         baseColor = spriteRenderer.color;
-        myAnim.Play("BushIdle");
+        myAnim.Play(animName);
     }
 
 
