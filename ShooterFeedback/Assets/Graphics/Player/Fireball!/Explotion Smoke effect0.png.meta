@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: a79c806661f0a2a40a0a8d1b9b57093e
+guid: afe5259b53a46a74891eb3367f457f58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2573048777990801848
-    second: beholdmymagicspell0000_0
-  - first:
-      213: 3579965262667743109
-    second: beholdmymagicspell0000_1
-  - first:
-      213: -2476342447146086607
-    second: beholdmymagicspell0000_2
-  - first:
-      213: 1134828586517949617
-    second: beholdmymagicspell0000_3
+      213: -5943182268217692096
+    second: Explotion Smoke effect0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beholdmymagicspell0000_0
+      name: Explotion Smoke effect0_0
       rect:
         serializedVersion: 2
-        x: 1451
-        y: 564
-        width: 16
-        height: 18
+        x: 136
+        y: 125
+        width: 84
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 846fa1ed4c1ba4cd0800000000000000
-      internalID: -2573048777990801848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beholdmymagicspell0000_1
-      rect:
-        serializedVersion: 2
-        x: 1453
-        y: 550
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58f7c8d50779ea130800000000000000
-      internalID: 3579965262667743109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beholdmymagicspell0000_2
-      rect:
-        serializedVersion: 2
-        x: 1458
-        y: 392
-        width: 59
-        height: 228
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13fc2af1aa342add0800000000000000
-      internalID: -2476342447146086607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beholdmymagicspell0000_3
-      rect:
-        serializedVersion: 2
-        x: 1510
-        y: 413
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1bc6c5c3698bfbf00800000000000000
-      internalID: 1134828586517949617
+      spriteID: 040fb732733958da0800000000000000
+      internalID: -5943182268217692096
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      beholdmymagicspell0000_0: -2573048777990801848
-      beholdmymagicspell0000_1: 3579965262667743109
-      beholdmymagicspell0000_2: -2476342447146086607
-      beholdmymagicspell0000_3: 1134828586517949617
+      Explotion Smoke effect0_0: -5943182268217692096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

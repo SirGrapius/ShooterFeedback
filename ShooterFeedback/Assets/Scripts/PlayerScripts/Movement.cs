@@ -37,8 +37,6 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
-        walkSource = GetComponentInChildren<AudioSource>();
     }
 
 

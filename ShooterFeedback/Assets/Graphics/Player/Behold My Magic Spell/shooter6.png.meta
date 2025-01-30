@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 229a07df9ed6b214ba20d0822bc96d63
+guid: a5cf69bdf0c17a1409feb249074a28f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2881373105135506919
-    second: shoot0001_0
+      213: 4814160471761120681
+    second: shooter6_0
   - first:
-      213: -695808601629883357
-    second: shoot0001_1
+      213: 2088916323554937445
+    second: shooter6_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shoot0001_0
+      name: shooter6_0
       rect:
         serializedVersion: 2
-        x: 751
-        y: 86
-        width: 672
-        height: 833
+        x: 0
+        y: 0
+        width: 829
+        height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e557fca291bcf720800000000000000
-      internalID: 2881373105135506919
+      spriteID: 9ad6c0b41755fc240800000000000000
+      internalID: 4814160471761120681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoot0001_1
+      name: shooter6_1
       rect:
         serializedVersion: 2
-        x: 900
-        y: 909
-        width: 68
-        height: 65
+        x: 132
+        y: 821
+        width: 71
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 324803c63cdf756f0800000000000000
-      internalID: -695808601629883357
+      spriteID: 56ac10724525dfc10800000000000000
+      internalID: 2088916323554937445
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shoot0001_0: 2881373105135506919
-      shoot0001_1: -695808601629883357
+      shooter6_0: 4814160471761120681
+      shooter6_1: 2088916323554937445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
