@@ -38,6 +38,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         
+        walkSource = GetComponentInChildren<AudioSource>();
     }
 
 
@@ -84,7 +85,7 @@ public class Movement : MonoBehaviour
         else if (isMoving)
         {
             StartCoroutine(endPuffCoroutine(0.2f));
-            myAnim.Play("PlayerJump");
+            myAnim.Play("JumpAnim");
         }
 
         if (playerInput.x != 0)
