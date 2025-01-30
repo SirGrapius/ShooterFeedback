@@ -21,12 +21,14 @@ public class Enemy1 : MonoBehaviour
 
     private bool isFacingRight = true;
     private Collider2D other;
+    private Animator anim;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         currentHealth = EnemyHealth;
-
+        anim.Play("Enemy_slide");
     }
 
     private float GetLedgeChecklenght()
