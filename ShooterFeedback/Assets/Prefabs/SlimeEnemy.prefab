@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 4600274322052804995}
   - component: {fileID: 7423064045411567090}
   - component: {fileID: 8479379165742337054}
-  - component: {fileID: 5260546557721527096}
-  - component: {fileID: 3621267755379605905}
   m_Layer: 0
   m_Name: SlimeEnemy
   m_TagString: Untagged
@@ -204,35 +202,6 @@ MonoBehaviour:
   pointPickUp: {fileID: 0}
   numberOfPoints: 3
   damageSfx: {fileID: 0}
---- !u!114 &5260546557721527096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3238391899630478885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ca942dc8179834f914178809de56c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
-  feedbackDuration: 0.2
-  blinkCount: 3
---- !u!114 &3621267755379605905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3238391899630478885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd8d92ec15f4a3349a73ecec7dd0bc07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashMaterial: {fileID: 2100000, guid: 9f86ee2cab0dcd9458da149c1ebb13d8, type: 2}
-  duration: 0.5
 --- !u!1 &3776324975382887770
 GameObject:
   m_ObjectHideFlags: 0
