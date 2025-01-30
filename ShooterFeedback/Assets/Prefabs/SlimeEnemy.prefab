@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6092359313713706814}
   - component: {fileID: 8657956002609209256}
   - component: {fileID: 4600274322052804995}
+  - component: {fileID: 8161944932869019955}
   - component: {fileID: 7423064045411567090}
   - component: {fileID: 8479379165742337054}
   - component: {fileID: 5260546557721527096}
@@ -83,12 +84,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6955344875524508589, guid: 4f734975000149b4e85116d92ec26507, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40dd54e2f503c294e8ad8ab7800d62b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.58, y: 6.7904096}
+  m_Size: {x: 14.17, y: 8.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -157,16 +158,38 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 2.45, y: 0.5, z: 3.05, w: 1.25}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.63, y: 6.440388}
-    newSize: {x: 7.58, y: 6.7904096}
+    oldSize: {x: 14.17, y: 8.35}
+    newSize: {x: 14.17, y: 8.35}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 8.63, y: 6.440388}
   m_EdgeRadius: 0
+--- !u!95 &8161944932869019955
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238391899630478885}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a512f447f4535644a7bc923a3d59a56, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &7423064045411567090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,12 +202,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4bc2a8e1d4d6b47b10c9d215bb439e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovementSpeed: 2.5
+  enemyMovementSpeed: 5
   ledgeCheckPosition: {fileID: 5197514321792577263}
   isGrounded: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   ledgeChecklenght: 0.5
   Walking: {fileID: 8300000, guid: 105fb050f1ecbac49a8866f1c1417041, type: 3}
   EnemyHealth: 50
