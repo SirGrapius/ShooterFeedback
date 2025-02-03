@@ -7,6 +7,7 @@ TagManager:
   - WinBlock
   - Enemy
   - Bullet
+  - Decoration
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - Water
   - UI
   - Decoration
-  - 
-  - 
+  - Player
+  - Bullet
   - 
   - 
   - 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: afe5259b53a46a74891eb3367f457f58
+guid: e4317e7876be4494d8851c42ab95b7ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5943182268217692096
-    second: Explotion Smoke effect0_0
+      213: 6682738439518977790
+    second: Ground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,8 +51,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 970}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Explotion Smoke effect0_0
+      name: Ground_0
       rect:
         serializedVersion: 2
-        x: 136
-        y: 125
-        width: 84
-        height: 72
+        x: 0
+        y: 0
+        width: 1920
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 040fb732733958da0800000000000000
-      internalID: -5943182268217692096
+      spriteID: efe706e343bddbc50800000000000000
+      internalID: 6682738439518977790
       vertices: []
       indices: 
       edges: []
@@ -126,7 +126,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Explotion Smoke effect0_0: -5943182268217692096
+      Ground_0: 6682738439518977790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1369162339575851055}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4742998849786829076}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3782972774086689001}
   - component: {fileID: 1571351236133664758}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WalkSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,8 @@ GameObject:
   - component: {fileID: 3360965783205733495}
   - component: {fileID: 6350724644726789906}
   - component: {fileID: 5030313534439388161}
-  m_Layer: 0
+  - component: {fileID: 7703081847348961597}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -230,6 +231,7 @@ Transform:
   - {fileID: 4742998849786829076}
   - {fileID: 3782972774086689001}
   - {fileID: 1105467967456481141}
+  - {fileID: 5452445395979555603}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2471281032981603828
@@ -364,6 +366,40 @@ MonoBehaviour:
   Sprite: {fileID: 3260937586468304944}
   Stretch: 0.01
   squashParent: {fileID: 4742998849786829076}
+--- !u!114 &7703081847348961597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5208338299992212307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a49fb9f4dcf0d4fa87d23be2b08cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCD: 0
+  speed: 20
+  cd: 0.5
+  animTime: 0.5
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3810739741206473449}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Shooting
+          m_BoolArgument: 0
+        m_CallState: 2
+  bullet: {fileID: 9044599627684792875, guid: 522b618f16da9ed45b37f6746950e8ca, type: 3}
+  fingerPoint: {fileID: 5452445395979555603}
+  myAnim: {fileID: 3810739741206473449}
 --- !u!1 &6070952101176382389
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +411,7 @@ GameObject:
   - component: {fileID: 1105467967456481141}
   - component: {fileID: 3499832478988259460}
   - component: {fileID: 8597702435912630248}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmokePuff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,6 +510,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &8528562642984087220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5452445395979555603}
+  m_Layer: 7
+  m_Name: ShootSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5452445395979555603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528562642984087220}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.03, y: -0.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5498150021757581677}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8542931575747431974
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +552,7 @@ GameObject:
   - component: {fileID: 3260937586468304944}
   - component: {fileID: 3358863076036602400}
   - component: {fileID: 3810739741206473449}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
