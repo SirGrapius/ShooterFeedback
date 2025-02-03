@@ -129,11 +129,26 @@ public class Movement : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "KillBrick")
+        {
+            TakeDamage(999999, null);
+        }
+    }
+
     public void TakeDamage(int damage, Collider2D other)
     {
         health -= damage;
         Vector2 direction = -(other.transform.position - this.transform.position).normalized;
         StartCoroutine(KnockbackCoroutine(direction));
+
+        if (health <= 0)
+        {
+            WinLoseScript loader = FindAnyObjectByType<WinLoseScript>();
+
+            loader.ScreenLoadProcess(1);
+        }
     }
     private IEnumerator KnockbackCoroutine(Vector2 direction)
     {

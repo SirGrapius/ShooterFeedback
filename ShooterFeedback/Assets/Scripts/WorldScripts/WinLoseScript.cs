@@ -34,7 +34,7 @@ public class WinLoseScript : MonoBehaviour
 
     }
 
-    IEnumerator ScreenLoadProcess(int WinOrLose)
+    public IEnumerator ScreenLoadProcess(int WinOrLose)
     {
         switch(WinOrLose)
         {

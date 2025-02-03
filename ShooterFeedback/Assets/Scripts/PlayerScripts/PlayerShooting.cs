@@ -13,7 +13,7 @@ public class PlayerShooting : MonoBehaviour
 
     [SerializeField] GameObject bullet;
     [SerializeField] Transform fingerPoint;
-    [SerializeField] Animator myAnim;
+    [SerializeField] ScreenShake shaker;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,9 +27,8 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && onCD == false)
         {
-            myEvent.Invoke();
             StartCoroutine(Cooldown());
-            StartCoroutine(Shoot());
+            StartCoroutine(Shoot());   
         }
     }
 
@@ -46,9 +45,12 @@ public class PlayerShooting : MonoBehaviour
 
     IEnumerator Shoot()
     {
+        myEvent.Invoke();
+
         yield return new WaitForSeconds(animTime);
 
         GameObject FireBall = Instantiate(bullet, fingerPoint.position, fingerPoint.rotation);
+        StartCoroutine(shaker.Shake(0.5f, 0.25f));
 
         Rigidbody2D rb = FireBall.GetComponent<Rigidbody2D>();
 

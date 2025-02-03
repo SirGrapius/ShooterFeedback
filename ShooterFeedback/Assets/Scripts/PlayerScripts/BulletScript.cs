@@ -18,7 +18,7 @@ public class BulletScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
-        myAnim.Play("FirePulse");
+        myAnim.Play("FirePulse", 0, 0f);
         myCamera = FindAnyObjectByType<ScreenShake>();
     }
 
