@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 556b8c28acae0a94e8eccb0cbf9029d3
+guid: 0f57157a7114c394e842e8d412f8c90f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4234090705077185718
-    second: Decorations_0
+      213: 661413570170886605
+    second: shooter_0
   - first:
-      213: 5936755781256884489
-    second: Decorations_1
-  - first:
-      213: -4254563025835751457
-    second: Decorations_2
-  - first:
-      213: -6378001285771275336
-    second: Decorations_3
-  - first:
-      213: -5616891256712012705
-    second: Decorations_4
+      213: -7839800459299541198
+    second: shooter_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -112,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Decorations_0
+      name: shooter_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 118
-        width: 595
-        height: 945
+        y: 0
+        width: 747
+        height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bca8e6201382ca30800000000000000
-      internalID: 4234090705077185718
+      spriteID: dc998a34320dd2900800000000000000
+      internalID: 661413570170886605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decorations_1
+      name: shooter_1
       rect:
         serializedVersion: 2
-        x: 897
-        y: 749
-        width: 13
-        height: 11
+        x: 132
+        y: 821
+        width: 71
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,74 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9013014cde7936250800000000000000
-      internalID: 5936755781256884489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decorations_2
-      rect:
-        serializedVersion: 2
-        x: 1198
-        y: 120
-        width: 722
-        height: 959
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fd78c8a3871c4f4c0800000000000000
-      internalID: -4254563025835751457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decorations_3
-      rect:
-        serializedVersion: 2
-        x: 593
-        y: 121
-        width: 188
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b35e986f99cc77a0800000000000000
-      internalID: -6378001285771275336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decorations_4
-      rect:
-        serializedVersion: 2
-        x: 844
-        y: 122
-        width: 452
-        height: 525
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5cdead592bcc02b0800000000000000
-      internalID: -5616891256712012705
+      spriteID: 23fa181f40f633390800000000000000
+      internalID: -7839800459299541198
       vertices: []
       indices: 
       edges: []
@@ -225,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Decorations_0: 4234090705077185718
-      Decorations_1: 5936755781256884489
-      Decorations_2: -4254563025835751457
-      Decorations_3: -6378001285771275336
-      Decorations_4: -5616891256712012705
+      shooter_0: 661413570170886605
+      shooter_1: -7839800459299541198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

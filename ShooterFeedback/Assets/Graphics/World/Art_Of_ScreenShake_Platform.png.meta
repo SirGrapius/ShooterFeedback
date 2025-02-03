@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Art_Of_ScreenShake_Platform_0: 8007448739323034406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

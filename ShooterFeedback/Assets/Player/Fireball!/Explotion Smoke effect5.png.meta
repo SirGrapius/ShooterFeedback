@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 556b8c28acae0a94e8eccb0cbf9029d3
+guid: 7e0456e4c21c2dc4e818fb8dda3f2cce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4234090705077185718
-    second: Decorations_0
+      213: -7910919236407145210
+    second: Explotion Smoke effect5_0
   - first:
-      213: 5936755781256884489
-    second: Decorations_1
+      213: -7378914653988184892
+    second: Explotion Smoke effect5_1
   - first:
-      213: -4254563025835751457
-    second: Decorations_2
+      213: -1957508138391296973
+    second: Explotion Smoke effect5_2
   - first:
-      213: -6378001285771275336
-    second: Decorations_3
+      213: 1163379824064903897
+    second: Explotion Smoke effect5_3
   - first:
-      213: -5616891256712012705
-    second: Decorations_4
+      213: 1136375319249055351
+    second: Explotion Smoke effect5_4
+  - first:
+      213: 4213653122014303185
+    second: Explotion Smoke effect5_5
+  - first:
+      213: -2340794749684906136
+    second: Explotion Smoke effect5_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,12 +64,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Decorations_0
+      name: Explotion Smoke effect5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 118
-        width: 595
-        height: 945
+        x: 29
+        y: 165
+        width: 84
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bca8e6201382ca30800000000000000
-      internalID: 4234090705077185718
+      spriteID: 60dc52b4ed4c63290800000000000000
+      internalID: -7910919236407145210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decorations_1
+      name: Explotion Smoke effect5_1
       rect:
         serializedVersion: 2
-        x: 897
-        y: 749
-        width: 13
-        height: 11
+        x: 129
+        y: 244
+        width: 92
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9013014cde7936250800000000000000
-      internalID: 5936755781256884489
+      spriteID: 4cc1c15a734d89990800000000000000
+      internalID: -7378914653988184892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decorations_2
+      name: Explotion Smoke effect5_2
       rect:
         serializedVersion: 2
-        x: 1198
-        y: 120
-        width: 722
-        height: 959
+        x: 222
+        y: 245
+        width: 71
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd78c8a3871c4f4c0800000000000000
-      internalID: -4254563025835751457
+      spriteID: 334204e28b885d4e0800000000000000
+      internalID: -1957508138391296973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decorations_3
+      name: Explotion Smoke effect5_3
       rect:
         serializedVersion: 2
-        x: 593
-        y: 121
-        width: 188
-        height: 96
+        x: 238
+        y: 88
+        width: 75
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b35e986f99cc77a0800000000000000
-      internalID: -6378001285771275336
+      spriteID: 9dabe3049c7252010800000000000000
+      internalID: 1163379824064903897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decorations_4
+      name: Explotion Smoke effect5_4
       rect:
         serializedVersion: 2
-        x: 844
-        y: 122
-        width: 452
-        height: 525
+        x: 1
+        y: 81
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +221,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5cdead592bcc02b0800000000000000
-      internalID: -5616891256712012705
+      spriteID: 77e6c53055735cf00800000000000000
+      internalID: 1136375319249055351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explotion Smoke effect5_5
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 35
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3d0688037e97a30800000000000000
+      internalID: 4213653122014303185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explotion Smoke effect5_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 24
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8678ee4c393d38fd0800000000000000
+      internalID: -2340794749684906136
       vertices: []
       indices: 
       edges: []
@@ -225,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Decorations_0: 4234090705077185718
-      Decorations_1: 5936755781256884489
-      Decorations_2: -4254563025835751457
-      Decorations_3: -6378001285771275336
-      Decorations_4: -5616891256712012705
+      Explotion Smoke effect5_0: -7910919236407145210
+      Explotion Smoke effect5_1: -7378914653988184892
+      Explotion Smoke effect5_2: -1957508138391296973
+      Explotion Smoke effect5_3: 1163379824064903897
+      Explotion Smoke effect5_4: 1136375319249055351
+      Explotion Smoke effect5_5: 4213653122014303185
+      Explotion Smoke effect5_6: -2340794749684906136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
