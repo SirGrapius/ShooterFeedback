@@ -30,13 +30,10 @@ public class DecorationScript : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void TakeDamage()
     {
-        if (collision.gameObject.tag == "Bullet")
-        {
             health -= 1;
             StartCoroutine(DamageIndicator());
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

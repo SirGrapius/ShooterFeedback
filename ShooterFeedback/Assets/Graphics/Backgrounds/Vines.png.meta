@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: afe5259b53a46a74891eb3367f457f58
+guid: 66f77a38385c6444a8b82c1b6a414a4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5943182268217692096
-    second: Explotion Smoke effect0_0
+      213: -406496011657995516
+    second: Vines_0
+  - first:
+      213: 7295689168946027194
+    second: Vines_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Explotion Smoke effect0_0
+      name: Vines_0
       rect:
         serializedVersion: 2
-        x: 136
-        y: 125
-        width: 84
-        height: 72
+        x: 0
+        y: 0
+        width: 17
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 040fb732733958da0800000000000000
-      internalID: -5943182268217692096
+      spriteID: 40b1386f706db5af0800000000000000
+      internalID: -406496011657995516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vines_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 41
+        width: 21
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba51ba15ae7f3560800000000000000
+      internalID: 7295689168946027194
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Explotion Smoke effect0_0: -5943182268217692096
+      Vines_0: -406496011657995516
+      Vines_1: 7295689168946027194
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

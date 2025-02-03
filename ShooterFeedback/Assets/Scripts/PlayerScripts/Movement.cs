@@ -1,5 +1,6 @@
 using Mono.Cecil;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Events;
@@ -80,7 +81,7 @@ public class Movement : MonoBehaviour
                 ac.sfxSource.Stop();
             }
         }
-        else if (isMoving)
+        else
         {
             StartCoroutine(endPuffCoroutine(0.2f));
             myAnim.Play("JumpAnim");

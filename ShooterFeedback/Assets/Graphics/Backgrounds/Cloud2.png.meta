@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: afe5259b53a46a74891eb3367f457f58
+guid: 618fc716b3177ca43bf90b1fa08791d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5943182268217692096
-    second: Explotion Smoke effect0_0
+      213: 8591141901481381195
+    second: Cloud2_0
+  - first:
+      213: -4911293541655054529
+    second: Cloud2_1
+  - first:
+      213: 7718810039110682391
+    second: Cloud2_2
+  - first:
+      213: 8231059315349886342
+    second: Cloud2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Explotion Smoke effect0_0
+      name: Cloud2_0
       rect:
         serializedVersion: 2
-        x: 136
-        y: 125
-        width: 84
-        height: 72
+        x: 15
+        y: 0
+        width: 547
+        height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 040fb732733958da0800000000000000
-      internalID: -5943182268217692096
+      spriteID: b4d85c4aa0ed93770800000000000000
+      internalID: 8591141901481381195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud2_1
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 434
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37faf58b8497dbb0800000000000000
+      internalID: -4911293541655054529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71749e5a5d8be1b60800000000000000
+      internalID: 7718810039110682391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud2_3
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 57
+        width: 51
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685999856d89a3270800000000000000
+      internalID: 8231059315349886342
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Explotion Smoke effect0_0: -5943182268217692096
+      Cloud2_0: 8591141901481381195
+      Cloud2_1: -4911293541655054529
+      Cloud2_2: 7718810039110682391
+      Cloud2_3: 8231059315349886342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
