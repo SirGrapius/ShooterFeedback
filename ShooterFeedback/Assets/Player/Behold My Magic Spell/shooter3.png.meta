@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 759a8ddb5163ed24bb885ec4e5ba3baf
+guid: a08c0bf7fe99156439da0cf42bbcc8c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1753094690984495434
-    second: first_jump_frame_0
+      213: 5191360317586649154
+    second: shooter3_0
+  - first:
+      213: -7856781843486278369
+    second: shooter3_1
+  - first:
+      213: 6953112557794077038
+    second: shooter3_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: first_jump_frame_0
+      name: shooter3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 536
-        height: 705
+        width: 749
+        height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4901c9455e345810800000000000000
-      internalID: 1753094690984495434
+      spriteID: 240bfce24ba6b0840800000000000000
+      internalID: 5191360317586649154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooter3_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 821
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1df2455a8a17f290800000000000000
+      internalID: -7856781843486278369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooter3_2
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 317
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69af9a380b6e7060800000000000000
+      internalID: 6953112557794077038
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      first_jump_frame_0: 1753094690984495434
+      shooter3_0: 5191360317586649154
+      shooter3_1: -7856781843486278369
+      shooter3_2: 6953112557794077038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

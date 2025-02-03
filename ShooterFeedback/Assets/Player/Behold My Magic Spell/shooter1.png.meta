@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 8a40190627d84bd48b4e2ae5f20f3ac4
+guid: d8b016e4d42fa2643a87caa160c9d336
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2536905681587193449
-    second: beholdmymagicspell0001_0
+      213: -6021313911128009211
+    second: shooter1_0
   - first:
-      213: 4709069814636437825
-    second: beholdmymagicspell0001_1
+      213: -9113880623463374232
+    second: shooter1_1
   - first:
-      213: 7362765676306587904
-    second: beholdmymagicspell0001_2
-  - first:
-      213: 5621717827780227084
-    second: beholdmymagicspell0001_3
-  - first:
-      213: -5449039833302989331
-    second: beholdmymagicspell0001_4
+      213: -7189584895663195460
+    second: shooter1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beholdmymagicspell0001_0
+      name: shooter1_0
       rect:
         serializedVersion: 2
-        x: 1446
-        y: 524
-        width: 15
-        height: 15
+        x: 0
+        y: 0
+        width: 748
+        height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 966ccabb646e43320800000000000000
-      internalID: 2536905681587193449
+      spriteID: 506d81e66eeff6ca0800000000000000
+      internalID: -6021313911128009211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beholdmymagicspell0001_1
+      name: shooter1_1
       rect:
         serializedVersion: 2
-        x: 1461
-        y: 405
-        width: 53
-        height: 210
+        x: 132
+        y: 821
+        width: 71
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,62 +143,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1416be3fb0af95140800000000000000
-      internalID: 4709069814636437825
+      spriteID: 86266214cddf48180800000000000000
+      internalID: -9113880623463374232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beholdmymagicspell0001_2
+      name: shooter1_2
       rect:
         serializedVersion: 2
-        x: 1448
-        y: 502
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00161bc7f5ccd2660800000000000000
-      internalID: 7362765676306587904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beholdmymagicspell0001_3
-      rect:
-        serializedVersion: 2
-        x: 1481
-        y: 386
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c003258449a540e40800000000000000
-      internalID: 5621717827780227084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beholdmymagicspell0001_4
-      rect:
-        serializedVersion: 2
-        x: 1507
-        y: 372
+        x: 741
+        y: 278
         width: 13
         height: 14
       alignment: 0
@@ -215,8 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de58501542f1164b0800000000000000
-      internalID: -5449039833302989331
+      spriteID: cba3b7321a6793c90800000000000000
+      internalID: -7189584895663195460
       vertices: []
       indices: 
       edges: []
@@ -235,11 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      beholdmymagicspell0001_0: 2536905681587193449
-      beholdmymagicspell0001_1: 4709069814636437825
-      beholdmymagicspell0001_2: 7362765676306587904
-      beholdmymagicspell0001_3: 5621717827780227084
-      beholdmymagicspell0001_4: -5449039833302989331
+      shooter1_0: -6021313911128009211
+      shooter1_1: -9113880623463374232
+      shooter1_2: -7189584895663195460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

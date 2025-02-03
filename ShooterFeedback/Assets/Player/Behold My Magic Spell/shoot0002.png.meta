@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 89ca35fc41cee3145a8adb4c57876c33
+guid: 4dea6c810271ad04eb71bff3db375ed9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4279630555195199526
-    second: shoot0002_0
+      213: 661413570170886605
+    second: shooter_0
   - first:
-      213: -3222136532789503559
-    second: shoot0002_1
+      213: -7839800459299541198
+    second: shooter_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shoot0002_0
+      name: shooter_0
       rect:
         serializedVersion: 2
-        x: 765
-        y: 87
-        width: 729
-        height: 831
+        x: 0
+        y: 0
+        width: 747
+        height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adfaeab3fa2bb94c0800000000000000
-      internalID: -4279630555195199526
+      spriteID: dc998a34320dd2900800000000000000
+      internalID: 661413570170886605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shoot0002_1
+      name: shooter_1
       rect:
         serializedVersion: 2
-        x: 898
-        y: 909
+        x: 132
+        y: 821
         width: 71
-        height: 65
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b9d54125eba843d0800000000000000
-      internalID: -3222136532789503559
+      spriteID: 23fa181f40f633390800000000000000
+      internalID: -7839800459299541198
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shoot0002_0: -4279630555195199526
-      shoot0002_1: -3222136532789503559
+      shooter_0: 661413570170886605
+      shooter_1: -7839800459299541198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
