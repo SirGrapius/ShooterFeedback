@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy1 : MonoBehaviour
 {
@@ -14,6 +16,9 @@ public class Enemy1 : MonoBehaviour
     [SerializeField] float ledgeChecklenght = 1f;
     [SerializeField] AudioClip Walking;
     [SerializeField] int EnemyHealth = 50;
+
+    [SerializeField] UnityEvent myEvent;
+    [SerializeField] GameObject deadBody;
     private int currentHealth;
 
 
@@ -49,8 +54,7 @@ public class Enemy1 : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy died!");
-     
-        Destroy(gameObject);
+        StartCoroutine(Death());
     }
 
 
@@ -94,5 +98,13 @@ private void OnCollisionEnter2D(Collision2D collision)
 
         Debug.DrawRay(ledgeCheckPosition.position, Vector2.down * ledgeChecklenght, UnityEngine.Color.red);
 
+    }
+
+    IEnumerator Death()
+    {
+        myEvent.Invoke();
+        yield return new WaitForSeconds(0.75f);
+        Instantiate(deadBody, new Vector3(this.transform.position.x, this.transform.position.y, 0), Quaternion.identity);
+        Destroy(gameObject);
     }
 }   
