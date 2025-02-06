@@ -33,7 +33,7 @@ public class BulletScript : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             Enemy1 enemyScript = collision.gameObject.GetComponent<Enemy1>();
-            enemyScript.TakeDamage(10);
+            enemyScript.TakeDamage(1);
             StartCoroutine(Explode());
         }
         else
