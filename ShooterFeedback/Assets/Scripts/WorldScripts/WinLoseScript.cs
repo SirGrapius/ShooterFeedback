@@ -41,7 +41,7 @@ public class WinLoseScript : MonoBehaviour
             //win
             case 0:
                 {
-                    yield return new WaitForSeconds(2.5f);
+                    yield return new WaitForSeconds(0.25f);
                     SceneManager.LoadScene("WinScreen");
                     AC.playMusic(AC.audios[0]); //change audio to victory music
                     break;
