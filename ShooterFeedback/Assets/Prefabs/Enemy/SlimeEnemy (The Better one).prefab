@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b4255ef803b074089fa41ef383d11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointPickUp: {fileID: 0}
+  pointPickUp: {fileID: 4044130676632236994, guid: b489694ce6c144b4c92a0960234765cf, type: 3}
   numberOfPoints: 3
   damageSfx: {fileID: 0}
 --- !u!95 &1801707920910691480

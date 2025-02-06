@@ -83,8 +83,16 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            StartCoroutine(endPuffCoroutine(0.2f));
-            myAnim.Play("JumpAnim");
+            if (!isMoving)
+            {
+                myAnim.Play("JumpAnim", 0, 0f);
+            }
+            if (isMoving)
+
+            {
+                StartCoroutine(endPuffCoroutine(0.2f));
+                myAnim.Play("PlayerGlide");
+            }
         }
 
         if (playerInput.x != 0)
@@ -107,6 +115,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            
             rb.linearVelocity = new Vector2(0, 0);
             rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         }
