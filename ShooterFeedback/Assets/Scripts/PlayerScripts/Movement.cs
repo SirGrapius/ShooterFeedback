@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
    
     [SerializeField] Rigidbody2D rb;
 
-
+    public bool isShooting;
 
     void Start()
     {
@@ -55,14 +55,14 @@ public class Movement : MonoBehaviour
             {
                 walkSource.Stop();
             }
-            if (isGrounded)
+            if (isGrounded && !isShooting)
             {
                 myAnim.Play("PlayerIdle");
             }
             StartCoroutine(endPuffCoroutine(0.2f));
             
         }
-        else if (isGrounded)
+        else if (isGrounded && !isShooting)
         {
             myAnim.Play("PlayerWalk");
             smokeAnim.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
@@ -83,11 +83,11 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            if (!isMoving)
+            if (!isMoving && !isShooting)
             {
                 myAnim.Play("JumpAnim", 0, 0f);
             }
-            if (isMoving)
+            if (isMoving && !isShooting)
 
             {
                 StartCoroutine(endPuffCoroutine(0.2f));

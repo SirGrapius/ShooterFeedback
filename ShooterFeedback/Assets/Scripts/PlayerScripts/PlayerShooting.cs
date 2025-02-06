@@ -45,6 +45,7 @@ public class PlayerShooting : MonoBehaviour
 
     IEnumerator Shoot()
     {
+        FindAnyObjectByType<Movement>().isShooting = true;
         myEvent.Invoke();
 
         yield return new WaitForSeconds(animTime);
@@ -55,7 +56,8 @@ public class PlayerShooting : MonoBehaviour
         Rigidbody2D rb = FireBall.GetComponent<Rigidbody2D>();
 
         rb.linearVelocity = fingerPoint.right * speed;
-        
+        FindAnyObjectByType<Movement>().isShooting = false;
+
         yield return null;
     }
 }

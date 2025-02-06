@@ -28,6 +28,9 @@ public class Enemy1 : MonoBehaviour
     private Collider2D other;
     private Animator anim;
 
+
+    bool enemyIsDead;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -47,7 +50,12 @@ public class Enemy1 : MonoBehaviour
         Debug.Log("Enemy Health: " + currentHealth);
         if (currentHealth <= 0)
         {
-            Die();
+            if(!enemyIsDead)
+            {
+                Die();
+                enemyIsDead = true;
+            }
+          
         }
     }
 
@@ -102,7 +110,8 @@ private void OnCollisionEnter2D(Collision2D collision)
 
     IEnumerator Death()
     {
-        myEvent.Invoke();
+        //myEvent.Invoke();
+        anim.SetTrigger("IsDead");
         yield return new WaitForSeconds(0.75f);
         Instantiate(deadBody, new Vector3(this.transform.position.x, this.transform.position.y, 0), Quaternion.identity);
         Destroy(gameObject);
